@@ -3,7 +3,6 @@ import os
 
 
 def sanitizator(origin, destiny):
-    print(origin)
     tables = os.listdir(origin)
     for table in tables:
         new_table = pd.read_csv(f'{origin}/{table}', on_bad_lines='skip')
